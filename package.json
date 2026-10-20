@@ -18,7 +18,8 @@
     "setup": "npm install && cp -n .env.example .env.local; npm run db:up",
     "stop": "docker compose down",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "typecheck": "next typegen && tsc --noEmit"
   },
   "dependencies": {
     "drizzle-orm": "^0.45.4",

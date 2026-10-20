@@ -13,7 +13,10 @@
     "db:psql": "docker compose exec db psql -U sandbox -d sandbox",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
-    "db:studio": "drizzle-kit studio"
+    "db:studio": "drizzle-kit studio",
+    "predev": "docker compose up -d --wait",
+    "setup": "npm install && cp -n .env.example .env.local; npm run db:up",
+    "stop": "docker compose down"
   },
   "dependencies": {
     "drizzle-orm": "^0.45.4",

@@ -40,8 +40,6 @@ Never skip a phase or start the next one without explicit approval.
 - One small, reviewable change at a time. Stop after each step and summarise what changed and why.
 - Do not add dependencies without asking first.
 - Validate all input at the server boundary (route handlers, server actions).
-- Money is stored as integer cents, never floats.
-- Functional over polished UI: no styling work unless asked.
 - If something is ambiguous, ask instead of assuming.
 
 ## Domain

@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "siteName": "Bike Studio",
+    "description": "Diseña tu bicicleta a medida: elige el tipo, personaliza cada componente y recíbela en casa."
+  },
+  "header": {
+    "home": "Inicio",
+    "configurator": "Configurador",
+    "language": "Idioma"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Bicicletas a medida",
+      "title": "Tu bici, pieza a pieza",
+      "subtitle": "Elige el tipo de bicicleta, parte de un modelo montado por nuestro taller y cambia el cuadro, las ruedas, los frenos y mucho más. Ves cómo queda y cuánto cuesta al instante.",
+      "cta": "Diseña tu bici",
+      "note": "Sin registro · Precios con IVA incluido",
+      "imageAlt": "Ilustración de una bicicleta"
+    }
+  },
+  "footer": {
+    "trustHeading": "Compra con confianza",
+    "warranty": {
+      "title": "3 años de garantía",
+      "text": "Cada bici sale revisada y ajustada por nuestro taller."
+    },
+    "shipping": {
+      "title": "Envío y devoluciones",
+      "text": "Envío gratis a la península y 30 días para devolverla."
+    },
+    "payment": {
+      "title": "Pago seguro",
+      "text": "Conexión cifrada y pago con proveedores certificados."
+    },
+    "badgesLabel": "Métodos de pago",
+    "badges": {
+      "card": "Tarjeta",
+      "transfer": "Transferencia",
+      "ssl": "Cifrado SSL"
+    },
+    "rights": "Todos los derechos reservados."
+  },
+  "configurator": {
+    "metaTitle": "Configurador",
+    "pickTitle": "¿Qué tipo de bici quieres?",
+    "pickSubtitle": "Elige un tipo y partirás de un modelo montado por nuestro taller. Después, cambia lo que quieras.",
+    "basePrice": "Modelo base",
+    "customise": "Personalizar",
+    "changeType": "Cambiar de tipo",
+    "baseModel": "Modelo base",
+    "optionsTitle": "Componentes",
+    "required": "Obligatorio",
+    "optional": "Opcional",
+    "none": "Sin este componente",
+    "outOfStock": "Agotado",
+    "summary": {
+      "title": "Tu bici",
+      "subtotal": "Base imponible",
+      "tax": "IVA",
+      "total": "Total (IVA incluido)"
+    },
+    "errors": {
+      "unknown-component": "Ese componente no existe.",
+      "unknown-category": "Esa categoría no existe.",
+      "wrong-category": "Ese componente no pertenece a esta categoría.",
+      "off-type": "Ese componente no es compatible con este tipo de bici.",
+      "out-of-stock": "Ese componente está agotado.",
+      "mandatory-category": "Este componente es obligatorio.",
+      "missing-mandatory": "Falta un componente obligatorio.",
+      "unknown-type": "Ese tipo de bici no existe."
+    },
+    "previewLabel": "Vista previa de tu bici"
+  },
+  "orderForm": {
+    "title": "Haz tu pedido",
+    "subtitle": "Déjanos tus datos y te contactaremos para confirmar el pago y la entrega. Ahora no se realiza ningún cargo.",
+    "fields": {
+      "name": "Nombre y apellidos",
+      "email": "Correo electrónico",
+      "phone": "Teléfono",
+      "street": "Dirección",
+      "postalCode": "Código postal",
+      "city": "Ciudad",
+      "province": "Provincia",
+      "notes": "Notas (opcional)"
+    },
+    "consent": "He leído y acepto la política de privacidad.",
+    "submit": "Enviar pedido",
+    "submitting": "Enviando…",
+    "errors": {
+      "required": "Este campo es obligatorio.",
+      "too-long": "El texto es demasiado largo.",
+      "invalid-email": "Introduce un correo electrónico válido.",
+      "invalid-phone": "Introduce un teléfono válido.",
+      "invalid-postal-code": "Introduce un código postal español válido (5 dígitos).",
+      "consent-required": "Debes aceptar la política de privacidad.",
+      "invalid": "Revisa los datos e inténtalo de nuevo."
+    },
+    "invalid": "Revisa los campos marcados.",
+    "rejected": "No hemos podido registrar el pedido porque la configuración ya no es válida:",
+    "failed": "Algo ha fallado. Inténtalo de nuevo.",
+    "placed": {
+      "title": "¡Pedido recibido!",
+      "reference": "Referencia",
+      "total": "Total",
+      "text": "Te escribiremos en breve para confirmar el pago y la entrega."
+    }
+  }
+}

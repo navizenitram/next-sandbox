@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "siteName": "Bike Studio",
+    "description": "Design your custom bike: choose the type, customise every component and get it delivered."
+  },
+  "header": {
+    "home": "Home",
+    "configurator": "Configurator",
+    "language": "Language"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Custom bikes",
+      "title": "Your bike, piece by piece",
+      "subtitle": "Choose a bike type, start from a model built by our workshop and swap the frame, wheels, brakes and more. See how it looks and what it costs, instantly.",
+      "cta": "Design your bike",
+      "note": "No sign-up · Prices include VAT",
+      "imageAlt": "Illustration of a bicycle"
+    }
+  },
+  "footer": {
+    "trustHeading": "Shop with confidence",
+    "warranty": {
+      "title": "3-year warranty",
+      "text": "Every bike is checked and tuned by our workshop."
+    },
+    "shipping": {
+      "title": "Shipping & returns",
+      "text": "Free shipping to mainland Spain and 30 days to return it."
+    },
+    "payment": {
+      "title": "Secure payment",
+      "text": "Encrypted connection and payment through certified providers."
+    },
+    "badgesLabel": "Payment methods",
+    "badges": {
+      "card": "Card",
+      "transfer": "Bank transfer",
+      "ssl": "SSL encryption"
+    },
+    "rights": "All rights reserved."
+  },
+  "configurator": {
+    "metaTitle": "Configurator",
+    "pickTitle": "What kind of bike do you want?",
+    "pickSubtitle": "Pick a type and start from a model built by our workshop. Then change whatever you like.",
+    "basePrice": "Base model",
+    "customise": "Customise",
+    "changeType": "Change type",
+    "baseModel": "Base model",
+    "optionsTitle": "Components",
+    "required": "Required",
+    "optional": "Optional",
+    "none": "Without this component",
+    "outOfStock": "Out of stock",
+    "summary": {
+      "title": "Your bike",
+      "subtotal": "Subtotal (excl. VAT)",
+      "tax": "VAT",
+      "total": "Total (VAT included)"
+    },
+    "errors": {
+      "unknown-component": "That component does not exist.",
+      "unknown-category": "That category does not exist.",
+      "wrong-category": "That component does not belong to this category.",
+      "off-type": "That component does not fit this bike type.",
+      "out-of-stock": "That component is out of stock.",
+      "mandatory-category": "This component is required.",
+      "missing-mandatory": "A required component is missing.",
+      "unknown-type": "That bike type does not exist."
+    },
+    "previewLabel": "Preview of your bike"
+  },
+  "orderForm": {
+    "title": "Place your order",
+    "subtitle": "Leave your details and we will contact you to confirm payment and delivery. You will not be charged now.",
+    "fields": {
+      "name": "Full name",
+      "email": "Email",
+      "phone": "Phone",
+      "street": "Address",
+      "postalCode": "Postal code",
+      "city": "City",
+      "province": "Province",
+      "notes": "Notes (optional)"
+    },
+    "consent": "I have read and accept the privacy policy.",
+    "submit": "Send order",
+    "submitting": "Sending…",
+    "errors": {
+      "required": "This field is required.",
+      "too-long": "The text is too long.",
+      "invalid-email": "Enter a valid email address.",
+      "invalid-phone": "Enter a valid phone number.",
+      "invalid-postal-code": "Enter a valid Spanish postal code (5 digits).",
+      "consent-required": "You must accept the privacy policy.",
+      "invalid": "Check your details and try again."
+    },
+    "invalid": "Please check the highlighted fields.",
+    "rejected": "We could not place the order because the configuration is no longer valid:",
+    "failed": "Something went wrong. Please try again.",
+    "placed": {
+      "title": "Order received!",
+      "reference": "Reference",
+      "total": "Total",
+      "text": "We will email you shortly to confirm payment and delivery."
+    }
+  }
+}

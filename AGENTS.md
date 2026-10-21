@@ -44,4 +44,42 @@ Never skip a phase or start the next one without explicit approval.
 
 ## Domain
 
-_To be filled in after scoping: entities, key flows, what is explicitly out of scope._
+Custom bike shop MVP for the Spanish market (`es`/`en`, EUR). Spec: `specs/001-custom-bike-shop/`.
+
+### Entities (`src/domain/`)
+
+- **Catalogue** (`catalogue/`): `BikeType`, `ComponentCategory` (holds the `mandatory` flag), `BikeComponent`
+  (net price in integer cents, `taxRateBps` where 2100 = 21%, `stock`, `visual` for the preview),
+  `Bike` (a pre-built bike, one per type), and the joins `TypeComponent` and `PrebuiltComponent`. Names are `{ es, en }`.
+- **Configuration** (`configuration/`): `{ bikeTypeId, selections: categoryId → componentId }`, at most one component
+  per category. A component must fit the type, be in stock and match the category. Every mandatory category is filled.
+- **Money and pricing** (`shared/money.ts`, `pricing/`): tax is rounded half up per line. Totals are sums of lines,
+  and tax is broken down by rate. Prices are shown with IVA included.
+- **Order** (`orders/`): customer, configuration, a server-computed quote, and status `lead`.
+
+### Ports and adapters
+
+- `CatalogueRepository` → static data in `src/adapters/catalogue/`.
+- `OrderRepository` → in memory (`src/adapters/orders/`). Orders are lost on restart.
+- `PaymentGateway` → interface only. No adapter exists and nothing calls it.
+- Adapters are wired only in `src/server/container.ts`.
+
+### Key flows
+
+1. `/` redirects to `/es` or `/en` (`src/proxy.ts`, `Accept-Language`, default `es`).
+2. Home → configurator → pick a type → start from its pre-built bike → swap components. The SVG preview and the
+   price update live on the client.
+3. Order form → Server Action → Zod validation → `placeOrder` re-validates and re-prices from catalogue ids → saved as
+   a lead → the reference is shown. The client translates error codes, since `next/root-params` isn't available in
+   Server Actions.
+
+### Extending
+
+- A bike type, a component or a locale: data only (catalogue data or dictionaries).
+- A category: data plus one renderer in `src/features/bike-preview/layers.tsx`.
+- A payment provider: one `PaymentGateway` adapter, wired in the container.
+
+### Out of scope
+
+Admin panel, real payments, persistence (Postgres stays in the stack but is unused by features), authentication,
+compatibility rules across components, stock decrements, and an order detail page.
